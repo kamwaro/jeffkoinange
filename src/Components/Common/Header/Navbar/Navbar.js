@@ -18,42 +18,36 @@ const AppNavbar  =  () =>  {
         return(
             <>
           
-                {clicked ? <div></div> : <AppBorder/>}
-            <nav className="NavbarItems">
-               
-                <div className="menu-icon" onClick={handleClick}>
-                    <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                {/* {clicked ? <div></div> : <AppBorder/>} */}
+            <nav className="NavbarItems" >
+            
+                <div className="menu-icon" onClick={handleClick} >
+                    <i className={clicked ? 'fas fa-times' : 'fas fa-bars'} ></i>
                 </div>
-             \
 
-                <ul className={clicked ? 'nav-menu activated' : 'nav-menu'} style={{width:'100vw',height:'fit-content',display:'flex',justifyContent:'space-between',alignItems:"center"}}>
-                    <li style={{display:'flex'}}>
-                    <li className="navLinkContainer">
-                            <NavLink className='nav-links' to='/home'>
-                                Home
-                            </NavLink>
-                    </li>
-                    <li className="navLinkContainer">
-                            <NavLink className='nav-links' to="/author">
-                                Author
-                            </NavLink>
-                    </li>
+                <ul className={clicked ? 'nav-menu activated' : 'nav-menu'} style={{width:'100vw',display:'flex',justifyContent:'space-between',alignItems:"center"}}>
+                    <li style={{display:'flex',borderTop:'1px solid #fff',borderBottom:'1px solid #fff'}}>
                     <li className="navLinkContainer">
                             <NavLink className='nav-links' to='/book'>
-                              The Book
+                            The Book
                             </NavLink>
                     </li>
-                           
+                    <li className="navLinkContainer">
+                            <NavLink className='nav-links'  to="/story">
+                               My Story
+                            </NavLink>
+                    </li>
+                   
 
                     </li>
                    
-                    <li style={{display:"flex",justifyContent:"space-between"}}>
+                    <li style={{display:"flex"}}>
                             <NavLink className='nav-links mainLink' to='/jeff'>
                                Jeff Koinange
                             </NavLink>
                     </li>
 
-                    <li style={{display:"flex"}} >
+                    <li style={{display:"flex",borderTop:'1px solid #fff',borderBottom:'1px solid #fff'}} >
                     <li className="navLinkContainer">
                     <NavLink className='nav-links' to='/gallery'>
                                 Gallery
@@ -61,8 +55,8 @@ const AppNavbar  =  () =>  {
 
                     </li>
                     <li className="navLinkContainer">
-                    <NavLink className='nav-links' to='/about'>
-                                About 
+                    <NavLink className='nav-links' to='/projects'>
+                                Projects
                      </NavLink>
                     </li>
 

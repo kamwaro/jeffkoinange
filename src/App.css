@@ -2,11 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  background-color: #000;
+  color: #fff;
 }
 
-.logo{
-  font-family: 'Parisienne', cursive;
-  font-weight: 300;
-  padding: 20px;
+.fly{
+  float: right;
 }

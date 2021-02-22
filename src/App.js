@@ -4,7 +4,7 @@ import {BrowserRouter as Router} from 'react-router-dom'
 function App() {
   return (
     <div>
-      <Router to="/">
+      <Router to="/jeff">
          <Home/>
       </Router>
     </div>
